@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" sizes="300x250" href="robinayush.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #060c21;
+            font-family: Arial,
+                Helvetica, sans-serif;
+            gap: 2em;
+        }
+
+        a {
+            background-color: #ffffff2c;
+            color: #fff;
+            padding: 15px 30px;
+            position: relative;
+            text-decoration: none;
+            letter-spacing: 1px;
+            font-size: 1.5em;
+            text-transform: uppercase;
+            transition: 0.5s;
+        }
+
+        a:hover {
+            letter-spacing: 3px;
+            background-color: var(--clr);
+            color: var(--clr);
+            box-shadow: 0 0 40px var(--clr);
+        }
+
+        a::before {
+            content: '';
+            position: absolute;
+            inset: 2px;
+            background-color: #060c21;
+        }
+
+        a span {
+            position: relative;
+            z-index: 1;
+        }
+
+        a i {
+            position: absolute;
+            inset: 0;
+            display: block;
+        }
+
+        a i::before {
+            content: '';
+            position: absolute;
+            border: 2px solid var(--clr);
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            left: 80%;
+            top: -6px;
+            background-color: #060c21;
+            transform: translateX(-50%);
+            transition: 0.5s;
+        }
+
+        a:hover i::before {
+            width: 15px;
+            height: 15px;
+            top: -9px;
+            left: 20%;
+        }
+
+        a i::after {
+            content: '';
+            position: absolute;
+            border: 2px solid var(--clr);
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            left: 20%;
+            bottom: -6px;
+            background-color: #060c21;
+            transform: translateX(-50%);
+            transition: 0.5s;
+        }
+
+        a:hover i::after {
+            width: 15px;
+            height: 15px;
+            bottom: -9px;
+            left: 80%;
+        }
+
+        h1 {
+            color: #ffff;
+            font-family: 'Satisfy', cursive;
+        }
+
+        label {
+            color: #ffff;
+            font-family: 'Satisfy', cursive;
+        }
+
+        h2 {
+            color: #ffff;
+            font-family: 'Carter One', cursive;
+
+        }
+
+        a {
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        h3 {
+            color: #ffff;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+
+        #emoji_heart {
+            font-family: 'Noto Color Emoji', sans-serif;
+
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 1320px;
+            margin: 0 auto;
+        }
+
+        .img_container {
+            width: 70%;
+            position: relative;
+            align-items: center;
+
+        }
+
+        .img_container:nth-child(even) {
+            margin-right: 0;
+            margin-left: auto;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+            transform-origin: right;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .mask {
+            visibility: hidden;
+            position: relative;
+            width: 80%;
+            height: 80%;
+            overflow: hidden;
+        }
+
+        #float_left {
+            float: left;
+            width: 75.33%;
+            padding: 5px;
+        }
+
+        #float_right {
+            float: right;
+            width: 75.33%;
+            padding: 5px;
+        }
+
+        #emoji_heart_love {
+            font-family: 'Noto Color Emoji', sans-serif;
+            font-size: xx-large;
+        }
+    </style>
+    <title>@robinayush | LinkTree</title>
+</head>
+
+<body>
+    <center>
+        <label></label>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <h1>@robinayush's Custom Link Tree</h1>
+        <br>
+        <p>
+            <h1><U>Depcription :</U></h1><label>All my project, social link are here</label>
+        </p>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <h3><b>Social Accounts</b></h3>
+        <br>
+        <br>
+        <a href="https://www.instagram.com/its_robinayush/" style="--clr:#FF0095">
+            <span>INSTAGRAM Profile</span>
+            <i></i>
+        </a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a href="https://www.youtube.com/@its_robinayush" style="--clr:#ff4f55">
+            <span>Youtube Channel</span>
+            <i></i>
+        </a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a href="https://discord.gg/w9hW254AWa" style="--clr:#0066ff">
+            <span>DISCORD Server</span>
+            <i></i>
+        </a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <h3 id="emoji_heart"><b>@RORBINAYUSH x @ROBINLADY</b></h3>
+        <br>
+        <br>
+        <center>
+            <div class="img_container">
+                <div class="img_container">
+                    <div class="mask">
+                        <div id="float_left">
+                            <img src="robinlady.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <h1 id="emoji_heart_love">❤</h1>
+                <br>
+                <div class="img_container">
+                    <div class="mask">
+                        <div id="float_right">
+                            <img src="robinayush.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </center>
+        <br>
+        <br>
+        <a href="https://www.instagram.com/itz_robinlady/" style="--clr:#ff5cd1">
+            <span>@ITz_robinlady</span>
+            <i></i>
+        </a>
+        <br>
+        <br>
+        <br>
+        <a href="https://www.instagram.com/its_robinayush/" style="--clr:#ff5cd1">
+            <span>@ITs_robinayush</span>
+            <i></i>
+        </a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr>
+        <br>
+
+        <h3><b>Projects</b></h3>
+        <br>
+        <br>
+        <a href="https://robinayush10.github.io/robinlady-bd-countdown-dv/" style="--clr:#ffea00">
+            <span>ROBINLADY'S Birthday Countdown</span>
+            <i></i>
+        </a>
+        <Br>
+        <br>
+        <br>
+        <label>
+            Dedicated To Someone Special In My Life <label id="emoji_heart">♥</label>
+        </label>
+        <br>
+        <br>
+        <br>
+
+        <a href="https://robinayush10.github.io/robinlady-bd-countdown-dv/" style="--clr:#ffea00">
+            <span>ROBONIX</span>
+            <i></i>
+        </a>
+        <Br>
+        <br>
+        <br>
+        <label>
+            Out Of Service
+        </label>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <h3><b>Fallen Moon [Under Developement]</b></h3>
+        <br>
+        <br>
+        <a href="https://www.instagram.com/fallenmoondev/" style="--clr:#FF0095">
+            <span>INSTAGRAM Page</span>
+            <i></i>
+        </a>
+        <br>
+        <br>
+        <Br>
+        <hr>
+        <br>
+        <h3 id="emoji_heart">Made with love ♥ by <b><u>@robinayush</u></b> © 2023</h3>
+        <br>
+    </center>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
